@@ -7,7 +7,6 @@ body {
 
 }
 
-
 .spacer {
     flex-grow: 1;
 }
@@ -20,7 +19,7 @@ body {
 
 .list-viewer-wrapper {
     border: 1px solid rgba(0, 0, 0, .03);
-    box-shadow: 0 9px 9px rgba(0, 0, 0, .24), 0 0 9px rgba(0, 0, 0, .12);
+    box-shadow: 0 11px 11px rgba(0, 0, 0, .24), 0 0 11px rgba(0, 0, 0, .12);
     margin: 4px;
 }
 
@@ -35,11 +34,28 @@ body {
 .form-container {
     display: flex;
     flex-direction: column;
+    
+}
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 18px;
+    padding-bottom: 8px;
+  }
+
+  .example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
 }
 
 .divider {
     margin-top: 5px !important;
 }
 
-html, body { height: 100%; }
+html, body { height: 80%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

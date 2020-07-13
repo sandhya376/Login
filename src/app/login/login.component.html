@@ -1,7 +1,7 @@
 <div class="medium-list">
     <div class="list-viewer-wrapper">
-      <div class="list-header-title">Login</div>
-
+        <div class="list-header-title">Login</div>
+      
         <form [formGroup]="loginForm" (ngSubmit)="loginForm.valid && onLoginSubmit()" novalidate>
             <div class="form-container">
                 <mat-form-field>
@@ -9,7 +9,8 @@
                         matInput
                         formControlName="email" required
                         [(ngModel)]="user.email"
-                        placeholder="Enter your email" />
+                        placeholder="Enter your email">
+                        <mat-icon matSuffix>email</mat-icon>
                 </mat-form-field>
 
                 
@@ -20,11 +21,7 @@
                     [(ngModel)]="user.password"
                     placeholder="Enter your password"
                     [type]="hide ? 'password' : 'text'">
-                    <button mat-icon-button matSuffix (click)="hide = !hide" 
-                    [attr.aria-label]="'Hide password'" 
-                    [attr.aria-pressed]="hide">
-                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                    </button>
+                    <mat-icon matSuffix>vpn_key</mat-icon>
                 </mat-form-field>
 
                 <mat-form-field>
@@ -41,12 +38,10 @@
                     </button>
                 </mat-form-field>
 
-
-                <button mat-button type="submit" class="mat-raised-button mat-primary" [disabled]="!loginForm.valid">Login</button>
+                <button mat-button type="submit" class="mat-raised-button mat-primary" [disabled]="!loginForm.valid">Sign In</button>
                 <button mat-button routerLink="/register" class="divider">Register</button>
-
-            </div>
-           
+                 </div>   
+                 <p class="text-center">Not Yet a member? <a herf="login">Sign Up</a></p>
         </form>
     </div>
 </div>

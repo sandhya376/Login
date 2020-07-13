@@ -1,3 +1,17 @@
-<p>
-    Logging You Out!!
-</p>
+<div>
+    <table *ngIf="isUserLoggedIn">
+        <tr>
+            <td>
+                <a href="#" (click)="logoutClicked($event)" id="logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a><br
+            /></td>
+        </tr>
+    </table>
+
+    <table *ngIf="! isUserLoggedIn">
+        <tr>
+            <td>
+                <a [routerLink]="['/login']" id="login"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>Login</a><br
+            /></td>
+        </tr>
+    </table>
+</div> 

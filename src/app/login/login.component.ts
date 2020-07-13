@@ -5,7 +5,7 @@ import { FormControl, Validators } from '@angular/forms';
 import { MatFormFieldControl} from '@angular/material/form-field'; 
 import { MatInputModule } from '@angular/material/input'; 
 import { AuthService } from '../service/auth.service';
-import { LoginService } from '../service/login.service';
+import { LoginService } from '../service/login.service'; 
 import { Router } from '@angular/router';
 
 

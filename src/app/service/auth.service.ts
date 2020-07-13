@@ -30,10 +30,12 @@ export class AuthService {
    .pipe(map((response: any) => response.json()));
   }
 
+
   loginUser(user) {
    return this.http.post(this.loginUrl, user)
   }
 
+  
   loggedIn(){
     return !!localStorage.getItem('token') 
   }
