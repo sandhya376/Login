@@ -24,6 +24,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RegisterComponent } from './register/register.component';
 import { AppHttpService } from './service/app-http.service';
 import { HttpModule } from '@angular/http';
+import {MatCheckboxModule} from '@angular/material/checkbox'; 
+import {TextFieldModule} from '@angular/cdk/text-field'; 
+
 
 @NgModule({
   declarations: [
@@ -48,11 +51,16 @@ import { HttpModule } from '@angular/http';
     MatIconModule,
     MatCardModule,
     MatFormFieldModule,
-    HttpModule
+    HttpModule,
+    MatCheckboxModule,
+    TextFieldModule,
+   
     
 
   ],
   providers: [AuthService, AuthGuard, AppHttpService],
+   
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

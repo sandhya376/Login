@@ -5,7 +5,6 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './service/auth.guard';
 
-
 const routes: Routes = [
   {
     path: '',
@@ -15,16 +14,21 @@ const routes: Routes = [
   {
   path: 'register',
   component: RegisterComponent,
-  
-}, {
+},
+
+{
   path: 'login',        
-  component: LoginComponent
- 
-}, {
+  component: LoginComponent,
+},
+
+{
+  path: 'forgotpassword',        
+  component: ForgotpasswordComponent, 
+},
+
+{
   path: 'home',
   component: HomeComponent,
-
-
 }];
 
 @NgModule({

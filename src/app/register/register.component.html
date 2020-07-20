@@ -7,7 +7,7 @@
                 <mat-form-field>
                     <input id="UserName"
                         matInput
-                        formControlName="name"
+                        formControlName="name" required
                         [(ngModel)]="user.name"
                         placeholder="Enter your Username" />
                         <mat-icon matSuffix>username</mat-icon>
@@ -44,12 +44,12 @@
                         <mat-radio-button value="female">Female</mat-radio-button>
                         <mat-radio-button value="other">Other</mat-radio-button>
                     </mat-radio-group>
+                    
                         <button mat-button type="submit" class="mat-raised-button mat-primary" [disabled]="!registerForm.valid">Sign Up</button>
                         <button mat-button routerLink="/login" class="divider">Login</button>
                     </div>
-                    <p>
-                        Already a member? <a herf="login">Sign In</a>
-                    </p>
+                
+                       <a routerLink="/login" class="text-center">Login Here</a>                
                 </form>
             </div>
         </div>

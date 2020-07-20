@@ -6,7 +6,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field'; 
-import {MatRadioModule} from '@angular/material/radio'; 
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCheckboxModule} from '@angular/material/checkbox'; 
+import {TextFieldModule} from '@angular/cdk/text-field';  
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import {MatRadioModule} from '@angular/material/radio';
     MatIconModule,
     MatCardModule,
     MatFormFieldModule,
-    MatRadioModule
+    MatRadioModule,
+    MatCheckboxModule,
+    TextFieldModule
      
   ],
   exports: [
@@ -29,7 +33,9 @@ import {MatRadioModule} from '@angular/material/radio';
     MatIconModule,
     MatCardModule,
     MatFormFieldModule,
-    MatRadioModule
+    MatRadioModule,
+    MatCheckboxModule,
+    TextFieldModule
        
     
   ],

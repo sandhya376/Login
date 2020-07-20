@@ -15,12 +15,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+ 
   user: LoginModel = new LoginModel();
   loginForm: FormGroup;
   hide = true;
-  loginUserData = {}
   auth: any;
-
+  loginUserData: any;
 
   constructor(
     private formBuilder: FormBuilder, 

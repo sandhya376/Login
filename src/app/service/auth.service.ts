@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { AppHttpService } from './app-http.service';
 import { RegisterModel } from '../models/register.model';
 import { LoginModel } from '../models/login.model';
+import { Observable } from 'rxjs';
 
 
 
@@ -32,7 +33,7 @@ export class AuthService {
 
 
   loginUser(user) {
-   return this.http.post(this.loginUrl, user)
+  return this.http.post(this.loginUrl, user)
   }
 
   
@@ -48,4 +49,3 @@ export class AuthService {
     return localStorage.getItem('token')
   }
 }
-

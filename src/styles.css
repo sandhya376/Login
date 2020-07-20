@@ -52,6 +52,10 @@ body {
   width: 100%;
 }
 
+mat-form-field {
+    margin-right: 12px;
+  }
+
 .divider {
     margin-top: 5px !important;
 }
