@@ -19,6 +19,9 @@ export class AuthService {
   private loginUrl = "http://localhost:4200/api/login";
   router: any;
   setLoggedIn: any;
+  email: any;
+  auth: any;
+  getAuth: any;
   constructor(private http: HttpClient, private appHttp: AppHttpService) { }
 
   registerUser(user: RegisterModel) {
@@ -49,3 +52,4 @@ export class AuthService {
     return localStorage.getItem('token')
   }
 }
+

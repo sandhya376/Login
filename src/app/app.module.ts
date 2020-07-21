@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthService } from './service/auth.service';
 import { AuthGuard } from './service/auth.guard';
 
+import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input'; 
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
@@ -22,6 +23,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RegisterComponent } from './register/register.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { AppHttpService } from './service/app-http.service';
 import { HttpModule } from '@angular/http';
 import {MatCheckboxModule} from '@angular/material/checkbox'; 
@@ -34,11 +36,13 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     HomeComponent,
     LoginComponent,
     NavBarComponent,
-    RegisterComponent
+    RegisterComponent,
+    ForgotpasswordComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     MatRadioModule,
     MatDatepickerModule,
     BrowserAnimationsModule,
