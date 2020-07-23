@@ -20,11 +20,9 @@ export class ForgotpasswordComponent implements OnInit {
 
   user: forgotpasswordModel = new forgotpasswordModel();
   forgotpasswordForm: FormGroup;
-  auth: any;
   email: any;
-  newPassword: any;
-  confirmPassword: any;
- 
+  auth: any;
+  
 
   constructor(
     private formBuilder: FormBuilder, 
@@ -54,7 +52,6 @@ export class ForgotpasswordComponent implements OnInit {
     .catch(e => alert('An error occurred while attempting to your password')); 
   }
   
-
 
 /*onForgotpasswordSubmit(){
    //alert(this.user.email);
