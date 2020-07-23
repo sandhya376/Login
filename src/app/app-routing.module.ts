@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { NewpasswordComponent } from './newpassword/newpassword.component';
 import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './service/auth.guard';
 
@@ -27,6 +28,11 @@ const routes: Routes = [
   component: ForgotpasswordComponent,
 },
   
+{
+  path: 'newpassword',
+  component: NewpasswordComponent,
+},
+
 {
   path: 'home',
   component: HomeComponent,
