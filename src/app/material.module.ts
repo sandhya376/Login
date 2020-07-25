@@ -8,7 +8,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field'; 
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox'; 
-import {TextFieldModule} from '@angular/cdk/text-field';  
+import {TextFieldModule} from '@angular/cdk/text-field'; 
+import {MatSelectModule} from '@angular/material/select';
+
+
 
 
 @NgModule({
@@ -22,7 +25,8 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     MatFormFieldModule,
     MatRadioModule,
     MatCheckboxModule,
-    TextFieldModule
+    TextFieldModule,
+    MatSelectModule
      
   ],
   exports: [
@@ -35,7 +39,8 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     MatFormFieldModule,
     MatRadioModule,
     MatCheckboxModule,
-    TextFieldModule
+    TextFieldModule,
+    MatSelectModule
        
     
   ],

@@ -19,7 +19,6 @@ export class RegisterComponent implements OnInit {
   auth: any;
   
 
-
   constructor(
    private formBuilder: FormBuilder,
    private authService: AuthService,
