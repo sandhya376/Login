@@ -60,6 +60,14 @@ mat-form-field {
     margin-top: 5px !important;
 }
 
+.mainAppContainer{
+    background:url(assets/banner/home-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    height: 600px;
+  } 
+
 html, body { height: 80%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
