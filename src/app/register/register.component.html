@@ -5,29 +5,74 @@
         <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onRegisterSubmit()" novalidate>
             <div class="form-container">
                 <mat-form-field>
-                    <input id="UserName"
+                    <input id="FirstName"
                         matInput
                         formControlName="name" required
                         [(ngModel)]="user.name"
-                        placeholder="Enter your Username" />
+                        placeholder="Enter your Firstname" />
+                        <mat-error *ngIf="selectFormControl.hasError('required')">
+                            This field is required
                         <mat-icon matSuffix>username</mat-icon>
                 </mat-form-field>
-    
-                     <mat-form-field>
-                            <input id="email"
-                                matInput
-                                formControlName="email" required placeholder="Ex. pat@example.com"
-                                [(ngModel)]="user.email">
-                                <mat-label>Enter your email</mat-label>
-                                <mat-icon matSuffix>email</mat-icon>
-                     </mat-form-field>
 
-                    <mat-form-field class="example-full-width">
-                        <mat-label>Contact No</mat-label>
-                        <span matPrefix>+91 &nbsp;</span>
-                        <input type="tel" matInput placeholder="555-555-1234">
-                        <mat-icon matSuffix>phone</mat-icon>
-                      </mat-form-field>
+                <mat-form-field>
+                    <input id="MiddleName"
+                        matInput
+                        formControlName="name" required
+                        [(ngModel)]="user.name"
+                        placeholder="Enter your Middlename" />
+                        <mat-icon matSuffix>username</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input id="LastName"
+                        matInput
+                        formControlName="name" required
+                        [(ngModel)]="user.name"
+                        placeholder="Enter your Lastname" />
+                        <mat-icon matSuffix>username</mat-icon>
+                </mat-form-field>
+
+             <h4>native html select</h4>
+                  <mat-form-field appearance="fill">
+                  <mat-label>Select your car (required)</mat-label>
+                  <select matNativeControl required [formControl]="selectFormControl">
+                  <option label="--select something --"></option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                  </select>
+                  <mat-error *ngIf="selectFormControl.hasError('required')">
+                   This field is required
+              </mat-error>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Contact No</mat-label>
+                    <span matPrefix>+91 &nbsp;</span>
+                    <input type="tel" matInput placeholder="555-555-1234">
+                    <mat-icon matSuffix>phone</mat-icon>
+                </mat-form-field>
+    
+                 <mat-form-field>
+                     <input id="email"
+                      matInput
+                      formControlName="email" required placeholder="Ex. pat@example.com"
+                      [(ngModel)]="user.email">
+                      <mat-label>Enter your email</mat-label>
+                      <mat-icon matSuffix>email</mat-icon>
+                 </mat-form-field>
+
+                 <mat-radio-group aria-label="Select an option">
+                    <label class="example-margin">Is Trainer:</label>
+                    <mat-radio-button value="yes">Yes</mat-radio-button>
+                    <mat-radio-button value="no">No</mat-radio-button>
+                </mat-radio-group>
+
+                <mat-radio-group aria-label="Select an option">
+                    <label class="example-margin">Is Trainer's Supervisor:</label>
+                    <mat-radio-button value="yes">Yes</mat-radio-button>
+                    <mat-radio-button value="no">No</mat-radio-button>
+                </mat-radio-group>
 
                      <mat-form-field>
                         <input id="password" 
@@ -46,7 +91,7 @@
                         <mat-radio-button value="other">Other</mat-radio-button>
                     </mat-radio-group>
                     
-                        <button mat-button type="submit" class="mat-raised-button mat-primary" [disabled]="!registerForm.valid">Sign Up</button>
+                        <button mat-button type="submit" class="mat-raised-button mat-primary" [disabled]="!registerForm.valid">Save</button>
                         <button mat-button routerLink="/login" class="divider">Login</button>
                     </div>
                 

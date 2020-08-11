@@ -24,11 +24,12 @@ import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RegisterComponent } from './register/register.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { NewpasswordComponent } from './newpassword/newpassword.component';
 import { AppHttpService } from './service/app-http.service';
 import { HttpModule } from '@angular/http';
 import {MatCheckboxModule} from '@angular/material/checkbox'; 
 import {TextFieldModule} from '@angular/cdk/text-field'; 
-
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     LoginComponent,
     NavBarComponent,
     RegisterComponent,
-    ForgotpasswordComponent
+    ForgotpasswordComponent,
+    NewpasswordComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +60,7 @@ import {TextFieldModule} from '@angular/cdk/text-field';
     HttpModule,
     MatCheckboxModule,
     TextFieldModule,
+    MatSelectModule,
    
     
 

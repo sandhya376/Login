@@ -18,6 +18,7 @@ export class RegisterComponent implements OnInit {
   hide = true;
   auth: any;
   
+
   constructor(
    private formBuilder: FormBuilder,
    private authService: AuthService,

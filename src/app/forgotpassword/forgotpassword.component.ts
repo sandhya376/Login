@@ -51,8 +51,8 @@ export class ForgotpasswordComponent implements OnInit {
       (rejectionReason) => alert(rejectionReason)) 
     .catch(e => alert('An error occurred while attempting to your password')); 
   }
-  
 
+  
 /*onForgotpasswordSubmit(){
    //alert(this.user.email);
   this.authService.authenticateUser(this.user)
@@ -63,4 +63,5 @@ export class ForgotpasswordComponent implements OnInit {
        console.log('Failed');
     }
    });*/
+  
   }

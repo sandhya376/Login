@@ -43,7 +43,9 @@ export class LoginComponent implements OnInit {
     })
     
   }
-  onLoginSubmit(){
+
+ 
+ onLoginSubmit(){
   //alert(this.user.email + ' '+ this.user.password);
   this.authService.authenticateUser(this.user)
   .subscribe(data => {
@@ -62,4 +64,3 @@ loginUser() {
     err => console.log(err)
   )};
 }
-
